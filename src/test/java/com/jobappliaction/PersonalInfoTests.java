@@ -68,7 +68,7 @@ public class PersonalInfoTests {
 		lastName = data.name().lastName();
 		gender = data.number().numberBetween(1,3);
 		dateOfBirth = data.date().birthday().toString();
-		email = "physicsguven@gmail.com";
+		email = "putyouremail";
 		phoneNumber = data.phoneNumber().cellPhone().replace(".", "");
 		city=data.address().cityName();
 		state=data.address().stateAbbr();
@@ -109,9 +109,9 @@ public class PersonalInfoTests {
 	@Test (priority=3)
 	public void verifyEmail(){
 		driver.get("http://mail.google.com");
-		driver.findElement(By.id("identifierId")).sendKeys("physicsguven");
+		driver.findElement(By.id("identifierId")).sendKeys("putyouremail");
 		driver.findElement(By.xpath("//span[.='Next']")).click();
-		driver.findElement(By.name("password")).sendKeys("G120382yh"+ ""+Keys.ENTER);
+		driver.findElement(By.name("password")).sendKeys("putyoutpass"+ ""+Keys.ENTER);
 		String application="SDET Job Application #" +appId;
 		driver.findElement(By.id("gbqfq")).sendKeys(application+""+Keys.ENTER);
 		driver.findElement(By.name("training@cybertekschool..")).click();
@@ -128,8 +128,8 @@ public class PersonalInfoTests {
 		emailList.add(driver.findElement(By.xpath("//td[contains(text(),'Current Annual Salary')]/following-sibling::td[2]")).getText());//SALARY
 		emailList.add(driver.findElement(By.xpath("//td[contains(text(),'TECHNOLOGIES')]/following-sibling::td[2]")).getText().replace(" ", ""));//TECH
 		emailList.add(driver.findElement(By.xpath("//td[contains(text(),'Years of Experience')]/following-sibling::td[2]")).getText());//YearsOfEx
-		System.out.println(bodyList);
-		System.out.println(emailList);
+//		System.out.println(bodyList);
+//		System.out.println(emailList);
 		
 		bodyList.removeAll(emailList); 
 		Assert.assertTrue(bodyList.isEmpty());
@@ -180,19 +180,8 @@ public class PersonalInfoTests {
 				bodyList.add(driver.findElement(By.xpath("//label[@class='descFld']//div[contains (text() ,'Annual Salary')]")).getText().substring(15));//SALARY
 				bodyList.add(driver.findElement(By.xpath("//label[@class='descFld']//div[contains (text() ,'Technologies')]")).getText().substring(13).replace(" ", ""));//TECH
 				bodyList.add(driver.findElement(By.xpath("//label[@class='descFld']//div[contains (text() ,'Years')]")).getText().substring(21));//YearsOfEx
-				System.out.println(Arrays.toString(bodyList.toArray()));
-				//User submitted data
-//						
-//						
-//						
-//						
-//						Email	:	physicsguven@gmail.com
-//						Phone	:	(749) 373-7519
-//						Address	:	East Golda,ID,Virgin Islands
-//						Current Annual Salary	:	62369
-//						TECHNOLOGIES	:	Java : Proficient  HTML : Expert  Selenium WebDriver : Proficient  Maven : Expert  Git : Proficient  TestNG : Expert  JUnit : Proficient  Cucumber : Proficient  API Automation : Proficient  JDBC : Expert  SQL : Proficient
-//						Years of Experience	:	6
-//						
+				//System.out.println(Arrays.toString(bodyList.toArray()));
+						
 	}	
 	public void certification(){
 		int num=data.number().numberBetween(0, 3); // how many will be selected
