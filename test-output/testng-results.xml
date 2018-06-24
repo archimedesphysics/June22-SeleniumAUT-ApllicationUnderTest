@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28080" started-at="2018-06-24T20:19:27Z" finished-at="2018-06-24T20:19:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28080" started-at="2018-06-24T20:19:27Z" finished-at="2018-06-24T20:19:55Z">
+      <class name="com.jobappliaction.PersonalInfoTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="setUp" is-config="true" duration-ms="4741" started-at="2018-06-24T20:19:27Z" finished-at="2018-06-24T20:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="navigateToHomePage()[pri:0, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="navigateToHomePage" is-config="true" duration-ms="3197" started-at="2018-06-24T20:19:32Z" finished-at="2018-06-24T20:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method status="PASS" signature="fullNameEmptyTest()[pri:0, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="fullNameEmptyTest" duration-ms="284" started-at="2018-06-24T20:19:35Z" finished-at="2018-06-24T20:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullNameEmptyTest -->
+        <test-method status="PASS" signature="navigateToHomePage()[pri:0, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="navigateToHomePage" is-config="true" duration-ms="295" started-at="2018-06-24T20:19:36Z" finished-at="2018-06-24T20:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method status="PASS" signature="submitFullApplication()[pri:1, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="submitFullApplication" duration-ms="6251" started-at="2018-06-24T20:19:36Z" finished-at="2018-06-24T20:19:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitFullApplication -->
+        <test-method status="PASS" signature="navigateToHomePage()[pri:0, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="navigateToHomePage" is-config="true" duration-ms="290" started-at="2018-06-24T20:19:42Z" finished-at="2018-06-24T20:19:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method status="PASS" signature="verifyIpAddress()[pri:2, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="verifyIpAddress" duration-ms="983" started-at="2018-06-24T20:19:42Z" finished-at="2018-06-24T20:19:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIpAddress -->
+        <test-method status="PASS" signature="navigateToHomePage()[pri:0, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="navigateToHomePage" is-config="true" duration-ms="473" started-at="2018-06-24T20:19:43Z" finished-at="2018-06-24T20:19:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method status="PASS" signature="verifyEmail()[pri:3, instance:com.jobappliaction.PersonalInfoTests@748fa354]" name="verifyEmail" duration-ms="11518" started-at="2018-06-24T20:19:44Z" finished-at="2018-06-24T20:19:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmail -->
+      </class> <!-- com.jobappliaction.PersonalInfoTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
